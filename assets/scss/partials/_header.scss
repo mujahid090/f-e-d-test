@@ -1,0 +1,495 @@
+.header {
+    padding: 10px 200px;
+    background-color: #ffffff;
+
+    .navbar {
+        .navbar-nav {
+            gap: 20px;
+
+            .nav-item {
+                .active {
+                    background-color: #F8F8F8;
+                    padding: 0.5rem 1rem;
+                    border-radius: 6px;
+                }
+
+                .nav-link {
+                    text-decoration: none;
+                    font-family: $body-font-family;
+                    font-style: normal;
+                    font-weight: $base-font-weight;
+                    font-size: $base-font-size;
+                    line-height: 1.7;
+                    color: $base-font-color;
+                    text-transform: capitalize;
+                    text-align: center;
+
+                    i {
+                        font-size: 12px;
+                        margin-left: 8px;
+                    }
+
+                    &:hover {
+                        color: $primary-color;
+                        transition: 0.4s;
+                    }
+                }
+
+                .dropdown-menu {
+                    margin-top: 15px;
+                    padding: 0;
+                    border: 1px solid $primary-color;
+                    text-align: left;
+
+                    .dropdown-item {
+                        text-decoration: none;
+                        font-family: $body-font-family;
+                        font-style: normal;
+                        font-weight: $base-font-weight;
+                        font-size: $base-font-size;
+                        line-height: 1.7;
+                        color: $base-font-color;
+                        text-transform: capitalize;
+                        text-align: center;
+                        padding: 10px 15px;
+
+                        i {
+                            color: $primary-color;
+                            margin-right: 10px;
+                        }
+
+                        &:hover {
+                            background-color: $secondary-color;
+                            color: $primary-color;
+                            transition: 0.4s;
+
+                            i {
+                                color: $base-font-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .log-bar {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+
+            &__login {
+                text-decoration: none;
+                text-transform: capitalize;
+                font-family: $body-font-family;
+                font-style: normal;
+                font-weight: $base-font-weight;
+                font-size: $base-font-size +3;
+                line-height: 1;
+                letter-spacing: -0.03em;
+                color: $primary-color;
+            }
+
+            &__open {
+                text-decoration: none;
+                text-transform: capitalize;
+                font-family: $body-font-family;
+                font-style: normal;
+                font-weight: $base-font-weight;
+                font-size: 15px;
+                line-height: 1;
+                color: #FFFFFF;
+                background-color: $primary-color;
+                padding: 12px 16px;
+                border-radius: 6px;
+
+                &:hover {
+                    background-color: $secondary-color;
+                    color: $primary-color;
+                    transition: 0.4s;
+                }
+            }
+        }
+    }
+
+    .sticky {
+        box-shadow: 0px 10px 40px rgba($primary-color, 0.5);
+        background-color: $secondary-color;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+        padding: 15px 200px;
+    }
+}
+@media (max-width: 1600px) {
+    .header {
+        padding: 10px 100px;
+    
+        .sticky {
+            padding: 15px 100px;
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    .header {
+        padding: 10px 60px;
+    
+        .sticky {
+            padding: 15px 60px;
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .header {
+        padding: 10px 60px;
+    
+        .sticky {
+            padding: 15px 60px;
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .header {
+        padding: 10px 60px;
+    
+        .sticky {
+            padding: 15px 60px;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .header {
+        padding: 10px 50px;
+    
+        .sticky {
+            padding: 15px 50px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .header {
+        padding: 10px 50px;
+        .navbar {
+            .navbar-nav {
+                gap: 10px;
+            }
+    
+            .log-bar {
+                gap: 20px;
+            }
+        }
+    
+        .sticky {
+            padding: 15px 50px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 10px 50px;
+    
+        .navbar {
+            .logo{
+                img{
+                    max-width: 70%;
+                }
+            }
+            .navbar-nav {
+                gap: 0;
+                display: inline-block;
+                margin: 10px 0 30px;
+                
+                .nav-item {
+                    .active {
+                        padding: 0.5rem 1rem;
+                    }
+                    
+                    .nav-link {
+                        font-size: $base-font-size;
+    
+                        i {
+                            font-size: 12px;
+                            margin-left: 8px;
+                        }
+                    }
+    
+                    .dropdown-menu {
+                        margin-top: 15px;
+                        padding: 0;
+    
+                        .dropdown-item {
+                            padding: 10px 15px;
+                        }
+                    }
+                }
+            }
+            .navbar-toggler{
+                background-color: transparent;
+                border: 2px solid $primary-color;
+                border-radius: 100%;
+                padding: 10px 15px;
+                .navbar-toggler-icon{
+                    color: $primary-color;
+                    font-size: 32px;
+                    width: 0.5em;
+                    height: 0.5em;
+                    margin-top: -25px;
+                    margin-left: -4px;
+                }
+            }
+            .navbar-toggler:focus {
+                box-shadow: none;
+            }
+    
+            .log-bar {
+    
+                &__login {
+                    font-size: $base-font-size +1;
+                }
+    
+                &__open {
+                    font-size: 14px;
+                    padding: 10px 14px;
+                }
+            }
+        }
+    
+        .sticky {
+            padding: 15px 50px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 20px;
+    
+        .navbar {
+            .logo{
+                img{
+                    max-width: 70%;
+                }
+            }
+            .navbar-nav {
+                gap: 0;
+                display: inline-block;
+                margin: 10px 0 30px;
+                
+                .nav-item {
+                    .active {
+                        padding: 0.5rem 1rem;
+                    }
+                    
+                    .nav-link {
+                        font-size: $base-font-size;
+    
+                        i {
+                            font-size: 12px;
+                            margin-left: 8px;
+                        }
+                    }
+    
+                    .dropdown-menu {
+                        margin-top: 15px;
+                        padding: 0;
+    
+                        .dropdown-item {
+                            padding: 10px 15px;
+                        }
+                    }
+                }
+            }
+            .navbar-toggler{
+                background-color: transparent;
+                border: 2px solid $primary-color;
+                border-radius: 100%;
+                padding: 10px 15px;
+                .navbar-toggler-icon{
+                    color: $primary-color;
+                    font-size: 32px;
+                    width: 0.5em;
+                    height: 0.5em;
+                    margin-top: -25px;
+                    margin-left: -4px;
+                }
+            }
+            .navbar-toggler:focus {
+                box-shadow: none;
+            }
+    
+            .log-bar {
+    
+                &__login {
+                    font-size: $base-font-size +1;
+                }
+    
+                &__open {
+                    font-size: 14px;
+                    padding: 10px 14px;
+                }
+            }
+        }
+    
+        .sticky {
+            padding: 15px 20px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        padding: 10px 20px;
+    
+        .navbar {
+            .logo{
+                img{
+                    max-width: 70%;
+                }
+            }
+            .navbar-nav {
+                gap: 0;
+                display: inline-block;
+                margin: 10px 0 30px;
+                
+                .nav-item {
+                    .active {
+                        padding: 0.5rem 1rem;
+                    }
+                    
+                    .nav-link {
+                        font-size: $base-font-size;
+    
+                        i {
+                            font-size: 12px;
+                            margin-left: 8px;
+                        }
+                    }
+    
+                    .dropdown-menu {
+                        margin-top: 15px;
+                        padding: 0;
+    
+                        .dropdown-item {
+                            padding: 10px 15px;
+                        }
+                    }
+                }
+            }
+            .navbar-toggler{
+                background-color: transparent;
+                border: 2px solid $primary-color;
+                border-radius: 100%;
+                padding: 10px 15px;
+                .navbar-toggler-icon{
+                    color: $primary-color;
+                    font-size: 32px;
+                    width: 0.5em;
+                    height: 0.5em;
+                    margin-top: -25px;
+                    margin-left: -4px;
+                }
+            }
+            .navbar-toggler:focus {
+                box-shadow: none;
+            }
+    
+            .log-bar {
+    
+                &__login {
+                    font-size: $base-font-size +1;
+                }
+    
+                &__open {
+                    font-size: 14px;
+                    padding: 10px 14px;
+                }
+            }
+        }
+    
+        .sticky {
+            padding: 10px 20px;
+        }
+    }
+}
+
+@media (max-width: 414px) {
+    .header {
+        padding: 10px 5px;
+    
+        .navbar {
+            .logo{
+                img{
+                    max-width: 60%;
+                }
+            }
+            .navbar-nav {
+                gap: 0;
+                display: inline-block;
+                margin: 10px 0 30px;
+                
+                .nav-item {
+                    .active {
+                        padding: 0.5rem 1rem;
+                    }
+                    
+                    .nav-link {
+                        font-size: $base-font-size;
+    
+                        i {
+                            font-size: 12px;
+                            margin-left: 8px;
+                        }
+                    }
+    
+                    .dropdown-menu {
+                        .dropdown-item {
+                            padding: 10px 15px;
+                        }
+                    }
+                }
+            }
+            .navbar-toggler{
+                background-color: transparent;
+                border: 2px solid $primary-color;
+                border-radius: 100%;
+                padding: 5px 8px;
+                margin-left: -50px;
+                .navbar-toggler-icon{
+                    color: $primary-color;
+                    font-size: 22px;
+                    width: 17px;
+                    height: 5px;
+                    margin-top: -25px;
+                    margin-left: 0px;
+                }
+            }
+            .navbar-toggler:focus {
+                box-shadow: none;
+            }
+    
+            .log-bar {
+                gap: 7px;
+    
+                &__login {
+                    font-size: $base-font-size;
+                }
+    
+                &__open {
+                    font-size: 14px;
+                    padding: 8px 10px;
+                }
+            }
+        }
+    
+        .sticky {
+            padding: 10px;
+        }
+    }
+}

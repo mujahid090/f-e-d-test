@@ -1,0 +1,626 @@
+.banner-bg {
+    background-color: white;
+}
+
+.banner-left {
+    align-items: center;
+
+    &__heading {
+        margin-bottom: 20px;
+
+        h1 {
+            font-family: $body-font-family;
+            font-style: normal;
+            font-weight: $base-font-weight;
+            font-size: $base-font-size +84;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            color: $base-font-color;
+        }
+    }
+
+    &__details {
+        margin-bottom: 20px;
+
+        p {
+            font-family: $body-font-family;
+            font-style: normal;
+            font-weight: 500;
+            font-size: $base-font-size +8;
+            line-height: 1.7;
+            color: $base-font-color;
+        }
+    }
+
+    &__option {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 60px auto;
+        gap: 25px;
+        margin-bottom: 60px;
+    }
+
+    &__option-details {
+        display: flex;
+        align-items: center;
+
+        i {
+            color: $primary-color;
+            margin-right: 20px;
+            background-color: $secondary-color;
+            border-radius: 100%;
+            padding: 10px 12px;
+        }
+
+        h3 {
+            font-family: $body-font-family;
+            font-style: normal;
+            font-weight: $base-font-weight;
+            font-size: $base-font-size +2;
+            line-height: 1.8;
+            color: $base-font-color;
+            margin-bottom: 0;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+    }
+
+    &__btn-account {
+        font-family: $body-font-family;
+        font-style: normal;
+        font-weight: $base-font-weight;
+        font-size: $base-font-size +2;
+        line-height: 1;
+        letter-spacing: -0.03em;
+        color: #FFFFFF;
+        text-transform: capitalize;
+        background-color: $primary-color;
+        border-radius: 6px;
+        padding: 16px 24px;
+        margin-right: 32px;
+
+        &:hover {
+            background-color: $secondary-color;
+            color: $primary-color;
+            transition: 0.4s;
+        }
+    }
+
+    &__btn-cards {
+        font-family: $body-font-family;
+        font-style: normal;
+        font-weight: $base-font-weight;
+        font-size: $base-font-size +2;
+        line-height: 1;
+        letter-spacing: -0.03em;
+        color: $primary-color;
+        text-transform: capitalize;
+
+        i {
+            margin-left: 10px;
+        }
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+.section-right {
+    &__img {
+        text-align: center;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+
+    .banner-left {
+        margin-left: 50px;
+
+        &__option {
+            grid-template-rows: 50px auto;
+        }
+    }
+
+    .section-right {
+        &__img {
+            text-align: center;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    .banner-left {
+
+        &__option {
+            grid-template-rows: 50px auto;
+        }
+    }
+
+    .section-right {
+        &__img {
+            text-align: end;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .banner-left {
+
+        &__option {
+            grid-template-rows: 50px auto;
+        }
+    }
+
+    .section-right {
+        &__img {
+            text-align: end;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .banner-left {
+
+        &__option {
+            grid-template-rows: 50px auto;
+        }
+    }
+
+    .section-right {
+        &__img {
+            text-align: end;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    
+    .banner-left {
+        margin-left: 30px;
+    
+        &__heading {
+            margin-bottom: 15px;
+    
+            h1 {
+                font-size: $base-font-size +44;
+            }
+        }
+    
+        &__details {
+            margin-bottom: 15px;
+    
+            p {
+                font-size: $base-font-size;
+            }
+        }
+    
+        &__option {
+            grid-template-columns: 1fr;
+            grid-template-rows: 30px auto;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+    
+        &__option-details {
+    
+            i {
+                margin-right: 15px;
+                padding: 10px 12px;
+            }
+    
+            h3 {
+                font-size: $base-font-size +1;
+                margin-bottom: 0;
+            }
+        }
+    
+        &__btn {
+            display: flex;
+        }
+    
+        &__btn-account {
+            font-size: $base-font-size +1;
+            padding: 12px 20px;
+            margin-right: 32px;
+        }
+    
+        &__btn-cards {
+            font-size: $base-font-size +1;
+    
+            i {
+                margin-left: 8px;
+            }
+        }
+    }
+    
+    .section-right {
+        &__img {
+            text-align: center;
+    
+            img {
+                max-width: 75%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .banner-left {
+        margin-left: 50px;
+    
+        &__heading {
+            margin-bottom: 15px;
+    
+            h1 {
+                font-size: $base-font-size +44;
+            }
+        }
+    
+        &__details {
+            margin-bottom: 15px;
+    
+            p {
+                font-size: $base-font-size;
+            }
+        }
+    
+        &__option {
+            grid-template-columns: 1fr;
+            grid-template-rows: 30px auto;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+    
+        &__option-details {
+    
+            i {
+                margin-right: 15px;
+                padding: 10px 12px;
+            }
+    
+            h3 {
+                font-size: $base-font-size +1;
+                margin-bottom: 0;
+            }
+        }
+    
+        &__btn {
+            display: flex;
+        }
+    
+        &__btn-account {
+            font-size: $base-font-size +1;
+            padding: 12px 20px;
+            margin-right: 32px;
+        }
+    
+        &__btn-cards {
+            font-size: $base-font-size +1;
+    
+            i {
+                margin-left: 8px;
+            }
+        }
+    }
+    
+    .section-right {
+        &__img {
+            text-align: center;
+    
+            img {
+                max-width: 75%;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .banner-left {
+        margin-left: 0;
+        align-items: center;
+    
+        &__heading {
+            margin-bottom: 10px;
+    
+            h1 {
+                font-size: $base-font-size +44;
+            }
+        }
+    
+        &__details {
+            margin-bottom: 10px;
+    
+            p {
+                font-size: $base-font-size;
+            }
+        }
+    
+        &__option {
+            grid-template-columns: 1fr;
+            grid-template-rows: 40px auto;
+            gap: 12px;
+            margin-bottom: 42px;
+        }
+    
+        &__option-details {
+    
+            i {
+                margin-right: 15px;
+                padding: 8px 10px;
+            }
+    
+            h3 {
+                font-size: $base-font-size +2;
+                margin-bottom: 0;
+            }
+        }
+    
+        &__btn {
+            display: flex;
+        }
+    
+        &__btn-account {
+            font-size: $base-font-size +1;
+            padding: 12px 20px;
+            margin-right: 32px;
+        }
+    
+        &__btn-cards {
+            font-size: $base-font-size +1;
+    
+            i {
+                margin-left: 8px;
+            }
+        }
+    }
+    
+    .section-right {
+        &__img {
+            text-align: center;
+    
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-left {
+        margin-left: 0;
+        align-items: center;
+    
+        &__heading {
+            margin-bottom: 10px;
+    
+            h1 {
+                font-size: $base-font-size +44;
+            }
+        }
+    
+        &__details {
+            margin-bottom: 10px;
+    
+            p {
+                font-size: $base-font-size;
+            }
+        }
+    
+        &__option {
+            grid-template-columns: 1fr;
+            grid-template-rows: 40px auto;
+            gap: 12px;
+            margin-bottom: 42px;
+        }
+    
+        &__option-details {
+    
+            i {
+                margin-right: 15px;
+                padding: 8px 10px;
+            }
+    
+            h3 {
+                font-size: $base-font-size +2;
+                margin-bottom: 0;
+            }
+        }
+    
+        &__btn {
+            display: flex;
+        }
+    
+        &__btn-account {
+            font-size: $base-font-size +1;
+            padding: 12px 20px;
+            margin-right: 32px;
+        }
+    
+        &__btn-cards {
+            font-size: $base-font-size +1;
+    
+            i {
+                margin-left: 8px;
+            }
+        }
+    }
+    
+    .section-right {
+        &__img {
+            text-align: left;
+    
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .banner-left {
+        margin: 0 50px;
+        align-items: center;
+    
+        &__heading {
+            margin-bottom: 10px;
+    
+            h1 {
+                font-size: $base-font-size +24;
+            }
+        }
+    
+        &__details {
+            margin-bottom: 10px;
+    
+            p {
+                font-size: $base-font-size;
+            }
+        }
+    
+        &__option {
+            grid-template-columns: 1fr;
+            grid-template-rows: 30px auto;
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+    
+        &__option-details {
+    
+            i {
+                margin-right: 15px;
+                padding: 8px 10px;
+            }
+    
+            h3 {
+                font-size: $base-font-size;
+                margin-bottom: 0;
+            }
+        }
+    
+        &__btn {
+            display: flex;
+        }
+    
+        &__btn-account {
+            font-size: $base-font-size +1;
+            padding: 12px 20px;
+            margin-right: 32px;
+        }
+    
+        &__btn-cards {
+            font-size: $base-font-size +1;
+    
+            i {
+                margin-left: 8px;
+            }
+        }
+    }
+    
+    .section-right {
+        &__img {
+            text-align: center;
+    
+            img {
+                max-width: 52%;
+                rotate: -90deg;
+            }
+        }
+    }
+}
+
+@media (max-width: 414px) {
+    
+    .banner-left {
+        margin: 0 20px;
+        align-items: center;
+    
+        &__heading {
+            margin-bottom: 10px;
+    
+            h1 {
+                font-size: $base-font-size +24;
+            }
+        }
+    
+        &__details {
+            margin-bottom: 10px;
+    
+            p {
+                font-size: $base-font-size;
+            }
+        }
+    
+        &__option {
+            grid-template-columns: 1fr;
+            grid-template-rows: 30px auto;
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+    
+        &__option-details {
+    
+            i {
+                margin-right: 15px;
+                padding: 8px 10px;
+            }
+    
+            h3 {
+                font-size: $base-font-size;
+                margin-bottom: 0;
+            }
+        }
+    
+        &__btn {
+            display: flex;
+        }
+    
+        &__btn-account {
+            font-size: $base-font-size +1;
+            padding: 12px 20px;
+            margin-right: 32px;
+        }
+    
+        &__btn-cards {
+            font-size: $base-font-size +1;
+    
+            i {
+                margin-left: 8px;
+            }
+        }
+    }
+    
+    .section-right {
+        &__img {
+            text-align: center;
+    
+            img {
+                max-width: 58%;
+                rotate: -90deg;
+            }
+        }
+    }
+}
